@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /*body요소의 배경색을 지정한다.*/
+        body{background-color: rgba(113, 99, 238, 0.733);}
+        /*사진의 위치를 상대적속성으로 바꾸고, 왼쪽에서 70px만큼 멀어지게 위치시킨다.*/
+        img{position: relative; left: 70px;}
+        /*h1요소(요리 이름)를 가운데정렬 시킨다.*/
+        h1{text-align: center;}
+        /*pre요소(구성재료 ~ 주의사항 전까지)의 위치를 상대적으로 설정하고 왼쪽에서 70px만큼 멀어지게 위치시킨다.*/
+        pre{position: relative; left:70px;}
+        /*id가 A인 요소(구성재료가 적혀있는 글씨)의 글씨를 볼드,20px크기,해당 font로 바꾼다.*/
+        #A{font:bold 20px Arial, serif;}
+        /*span요소중에서 id가 cook인것(조리법)의 폰트크기와 폰트종류를 설정한다.*/
+        span#cook{font: 20px impact,serif;}
+        /*span요소중에서 클래스가 sup인 것(만드는 과정을 추가적으로 설명하는 내용)의 밑줄을 추가하고 폰트색을 지정한다.*/
+        span.sup{text-decoration-line: underline; color:rgba(158, 11, 11, 0.911)}
+        /*id가 last인 요소(주의사항목록)의 위치를 상대적속성으로 바꾸고 왼쪽으로부터 70px만큼 떨어트린다.*/
+        #last{position: relative; left: 70px;}
+    </style>
+</head>
+<body ><!--음식 이름과 사진을 나타내고 있다.-->
+    <h1>라면땅</h1>  
+    <img src="라면땅.jpg" alt="라면땅" width="350px" height="250px">
+    <pre><!--음식의 주요 재료를 설명하고있다.-->
+<span id="A">구성재료
+라면사리 , 설탕 , 물엿</span>
+
+<!--만드는 과정을 서술하고 있다.-->
+<h2>만드는 법</h2>
+<span id="cook">1. 라면사리를 아주 잘게 부순다.
+ <span class="sup">(작을수록 더 완성도있는 요리가 된다.)</span>
+
+2. 기름을 두르지 않고, 사리를 약불에 볶는다. 
+ <span class="sup">(사리의 색이 변하는게 보일때까지)</span>
+
+3. 색이 변하면, 설탕,물엿을 넣고 2분정도 더 볶는다. 
+ <span class="sup">(기호에 따라 라면스프를 추가해도 좋다.)</span>
+</span> </pre>
+<!--주의사항을 나타내고있다.-->
+<div id="last"><!--주의사항이라고 알려주는 글씨에는 추가적인 색이 설정되고, 크기도 더 크다.-->
+    <h2 style="color:rgb(223, 148, 35)">주의사항</h2>
+    <h3>강한불에 익히면 재료가 타기때문에 약불에 오래 <br/>익혀야한다.</h3>
+    <h3>설탕을 넣고나서 볶을때는 짧은시간에 볶아야 <br/>타지않는다.</h3>
+</div>
+</body>
+</html>

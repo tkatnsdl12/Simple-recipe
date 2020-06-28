@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /*배경색을 설정한다.*/
+        body{background-color: rgba(240, 134, 231, 0.733);}
+        /*토스트 이미지의 위치를 설정한다.*/
+        img{position: relative; left: 70px;}
+        /*계란토스트라는 문단의 제목을 가운데정렬한다.*/
+        h1{text-align: center;}
+        /*구성재료와 제조법의 내용이 담긴 pre의 좌측으로부터의 거리를 설정한다.*/
+        pre{position: relative; left:70px;}
+        /*구생재료목록의 폰트를 설정한다.*/
+        #A{font:bold 20px Arial, serif;}
+        /*제조법 목록의 폰트를 설정한다.*/
+        span#cook{font: 20px impact,serif;}
+        /*제조의 부가적인 설명란에는 밑줄을 추가한다.*/
+        span.sup{text-decoration-line: underline;}
+        /*주의사항목록을 좌측으로부터 거리를 두어 위치시킨다..*/
+        #last{position: relative; left: 70px;}
+    </style>
+</head>
+<body >
+    <!--음식이름과 그림으로 음식을 소개하고 있다.-->
+    <h1>계란토스트</h1>
+    <img src="계란토스트.jpg" alt="계란토스트" width="350px" height="250px">
+    <!--pre를 이용하여 구성재료와 제조법의 빈칸을 마음대로 설정하고있다.-->
+    <pre>
+<span id="A">구성재료
+식빵 , 계란 3개 , 설탕 , 버터 , 우유</span>
+
+
+<h2>만드는 법</h2>
+<span id="cook">1. 계란 3개와 설탕 2숟갈, 우유 3숟갈을 넣고 섞는다.
+
+2. 식빵을 먹기좋은 크기로 자른다.
+ <span dir="sup">(식빵테두리는 잘라서 한번에 익히는것을 추천)</span>
+
+3. 후라이팬에 버터를 두르고, 식빵을 계란에 담궜다가 
+굽는다. <span class="sup">(버터가 없으면 식용유 사용,양면을 굽는다.)</span>
+
+4. 식빵이 노릇노릇해지면 꺼낸다. 
+</span> </pre>
+<!--주의사항의 위치를 설정하기위해서 div로 묶었다.-->
+<div id="last">
+    <h2 style="color:rgb(223, 148, 35)">주의사항</h2>
+    <h3>우유가 없으면 넣지 않아도 되나, 우유를 넣으면 더 <br/>부드럽다.</h3>
+</div>
+</body>
+</html>

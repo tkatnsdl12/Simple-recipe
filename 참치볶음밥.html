@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /*배경색을 설정한다.*/
+        body{background-color: rgba(243, 200, 136, 0.733);}
+        /*음식그림의 위치를 상대적속성으로 바꾸고 왼쪽에서 70px만큼 떨어진곳에 위치시킨다.*/
+        img{position: relative; left: 70px;}
+        /*음식이름을 가운데정렬한다.*/
+        h1{text-align: center;}
+        /*구성재료 ~ 주의사항 전까지의 내용의 위치를 조정한다.*/
+        pre{position: relative; left:70px;}
+        /*id가 A인 구성요소 목록의 글씨체를 설정한다.*/
+        #A{font:bold 20px Arial, serif;}
+        /*제조법이 적힌 글씨의 속성을 설정한다.*/
+        span#cook{font: 20px impact,serif;}
+        /*제조법에서 부가적인 설명을 하는 내용에 밑줄을 추가한다.*/
+        span.sup{text-decoration-line: underline;}
+        /*주의사항목록의 위치를 설정한다.*/
+        #last{position: relative; left: 70px;}
+    </style>
+</head>
+<body >
+    <!--음식의 이름과 사진으로 음식을 소개하고있다.-->
+    <h1>참치볶음밥</h1>
+    <img src="참치볶음밥.jpg" alt="참치볶음밥" width="350px" height="250px">
+    <!--pre를 이용하여 구성재료와 제조방법을 자유롭게 나타내고있다.-->
+    <pre>
+<span id="A">구성재료
+밥 , 캔참치 , 계란(인당 3개) , 굴소스(없으면 소금) 
+,간장</span>
+
+
+<h2>만드는 법</h2>
+<span id="cook">1. 후라이팬에 기름을 두르고, 에그스크램블을 만든다.
+ <span class="sup">(계란은 3개정도 사용한다.)</span>
+
+2. 계란이 익으면, 기름을 뺀 참치와 간장 1숟갈을 
+   넣고 계란과 같이 2~3분동안 볶는다.
+
+3. 밥과 굴소스 1숟갈을 넣고 볶는다.
+ <span class="sup">(굴소스가 없을경우 소금으로 대체)</span> 
+</span> </pre>
+<!--주의사항에 대해 나와있다. div로 묶어서 주의사항의 위치를 조정한다.-->
+<div id="last">
+    <h2 style="color:rgb(223, 148, 35)">주의사항</h2>
+    <h3>너무 오래 볶으면 수분이 없기때문에, 맛이 덜하다.</h3>
+    <h3>너무많이 섞으면 밥이 서로 붙기 때문에, 재료를 다넣고 <br/>나서는 후라이팬에 펴서 익힌다.</h3>
+</div>
+</body>
+</html>
