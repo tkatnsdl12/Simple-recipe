@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /*배경색을 설정한다.*/
+        body{background-color: rgba(5, 202, 71, 0.733);}
+        /*음식그림의 위치를 상대적속성으로 바꾸고 왼쪽에서 70px만큼 떨어진곳에 위치시킨다.*/
+        img{position: relative; left: 70px;}
+        /*음식이름을 가운데정렬한다.*/
+        h1{text-align: center;}
+        /*구성재료 ~ 주의사항 전까지의 내용의 위치를 조정한다.*/
+        pre{position: relative; left:70px;}
+        /*id가 A인 구성요소 목록의 글씨체를 설정한다.*/
+        #A{font:bold 20px Arial, serif;}
+        /*제조법이 적힌 글씨의 속성을 설정한다.*/
+        span#cook{font: 20px impact,serif;}
+        /*제조법에서 부가적인 설명을 하는 내용에 밑줄을 추가한다.*/
+        span.sup{text-decoration-line: underline;}
+        /*주의사항목록의 위치를 설정한다.*/
+        #last{position: relative; left: 70px;}
+    </style>
+</head>
+<body >
+    <!--음식의 이름과 사진으로 음식을 소개하고있다.-->
+    <h1>계란국</h1>
+    <img src="계란국.jpg" alt="계란국" width="350px" height="250px">
+    <!--pre를 이용하여 구성재료와 제조방법을 자유롭게 나타내고있다.-->
+    <pre>
+<span id="A">구성재료
+파 , 달걀 2개 , 양파 , 소금과 후추</span>
+
+
+<h2>만드는 법</h2><!--제조법을 span으로 묶어서 글씨스타일을 설정한다.-->
+<span id="cook">1. 파와 양파를 썬다.
+
+2. 계란을 그릇에 풀고, 마구 섞는다.
+
+3. 끓는 물에 계란을 넣고 섞으며 풀어준다.
+ 
+4. 계란을 넣고나서 바로 후추와 소금으로 간을 맞춘다.
+
+5. 이후 파와 양파를 넣고 4분정도 끓인다.
+</span> </pre>
+<!--주의사항에 대해 나와있다. div로 묶어서 주의사항의 위치를 조정한다.-->
+<div id="last">
+    <!--주의사항임을 알리는 문구에 색을 입혀 강조한다.-->
+    <h2 style="color:rgb(223, 148, 35)">주의사항</h2>
+    <h3>소금은 간을 보면서 조금씩 넣을 것!</h3>
+    <h3>물은 라면 1개 끓일 정도로 하는것이 좋다.</h3>
+</div>
+</body>
+</html>

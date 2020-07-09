@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /*배경색을 설정한다.*/
+        body{background-color: rgba(243, 147, 135, 0.733);}
+        /*음식그림의 위치를 상대적속성으로 바꾸고 왼쪽에서 70px만큼 떨어진곳에 위치시킨다.*/
+        img{position: relative; left: 70px;}
+        /*음식이름을 가운데정렬한다.*/
+        h1{text-align: center;}
+        /*구성재료 ~ 주의사항 전까지의 내용의 위치를 조정한다.*/
+        pre{position: relative; left:70px;}
+        /*id가 A인 구성요소 목록의 글씨체를 설정한다.*/
+        #A{font:bold 20px Arial, serif;}
+        /*제조법이 적힌 글씨의 속성을 설정한다.*/
+        span#cook{font: 20px impact,serif;}
+        /*제조법에서 부가적인 설명을 하는 내용에 밑줄을 추가한다.*/
+        span.sup{text-decoration-line: underline;}
+        /*주의사항목록의 위치를 설정한다.*/
+        #last{position: relative; left: 70px;}
+    </style>
+</head>
+<body >
+    <!--음식의 이름과 사진으로 음식을 소개하고있다.-->
+    <h1>김치볶음밥</h1>
+    <img src="김치볶음밥.jpg" alt="김치볶음밥" width="350px" height="250px">
+    <!--pre를 이용하여 구성재료와 제조방법을 자유롭게 나타내고있다.-->
+    <pre>
+<span id="A">구성재료
+밥(식은 밥) , 김치 , 스팸 , 간장, 
+양파 , 설탕</span>
+
+
+<h2>만드는 법</h2>
+<span id="cook">1. 김치와 햄,양파를 아주 잘게 썬다.
+
+2. 후라이팬에 기름을 두르고 중강불에 김치와 햄을 
+1분동안 볶는다.
+<span class="sup">(이때 김치국물을 추가하여 넣지않는다.)</span>
+
+3. 이어서 양파를 추가하고, 설탕을 기호에 맞게 넣고
+간장은 1스푼정도 넣고 2분동안 볶는다. 
+<span class="sup">(설탕은 보통 1스푼정도가 적당하다.)</span>
+ 
+4. 후라이팬에 밥을 추가하고 밥과 재료가 잘 섞일 때까지
+볶는다.
+<span class="sup">(설탕은 보통 1스푼정도가 적당하고, 고춧가루를 
+추가해도 된다.)</span>
+</span> </pre>
+<!--주의사항에 대해 나와있다. div로 묶어서 주의사항의 위치를 조정한다.-->
+<div id="last">
+    <h2 style="color:rgb(223, 148, 35)">주의사항</h2>
+    <h3>식은밥을 사용하면 밥이 눌러붙는 것을 예방할 수 있다.</h3>
+    <h3>간은 간장과 고춧가루로 조절한다.</h3>
+</div>
+</body>
+</html>

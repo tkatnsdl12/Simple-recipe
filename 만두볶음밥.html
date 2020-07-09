@@ -2,24 +2,33 @@
 <html>
 <head>
     <style>
+        /*배경색을 설정한다.*/
         body{background-color: rgba(65, 210, 230, 0.733);}
+        /*음식사진의 위치를 조정한다.*/
         img{position: relative; left: 70px;}
+        /*음식이름을 가운데 정렬 시킨다.*/
         h1{text-align: center;}
+        /*구성재료와 만드는과정이 담긴 내용의 위치를 조정한다.*/
         pre{position: relative; left:70px;}
+        /*id가 A인 구성재료 목록의 폰트를 설정한다.*/
         #A{font:bold 20px Arial, serif;}
+        /*span이고, id가 cook인 만드는 과정을 담은 내용의 폰트를 설정한다.*/
         span#cook{font: 20px impact,serif;}
+        /*만드는 과정중에서 부가적인 설명을 적은 내용을 강조하기위해 밑줄을 추가한다.*/
         span.sup{text-decoration-line: underline;}
+        /*주의사항이 나와있는 목록의 위치를 조정한다.*/
         #last{position: relative; left: 70px;}
     </style>
 </head>
-<body >
+<body ><!--음식이름과 사진을 통해 간단하게 소개하고있다.-->
     <h1>만두볶음밥</h1>
     <img src="만두볶음밥.jpg" alt="만두볶음밥" width="350px" height="250px">
+    <!--음식의 주된 재료를 나타내고 있다.-->
     <pre>
 <span id="A">구성재료
-밥 , 만두 , 굴소스(없다면 소금)</span>
+밥(식은 밥) , 만두 , 굴소스(없다면 소금)</span>
 
-
+<!--조리법을 나타내고 있다.-->
 <h2>만드는 법</h2>
 <span id="cook">1. 만두를 익힌다.
  <span class="sup">(찐만두와 군만두 중에서 선택)</span>
@@ -32,6 +41,7 @@
 4. 굴소스를 1.5스푼정도 넣고 볶는다.
  <span class="sup">(없을경우 소금으로 대체)</span> 
 </span> </pre>
+<!--조리를 하면서 주의해야 할 것에 대해 나와있다.-->
 <div id="last">
     <h2 style="color:rgb(223, 148, 35)">주의사항</h2>
     <h3>너무 오래 볶으면 수분이 없기때문에, 맛이 덜하다.</h3>

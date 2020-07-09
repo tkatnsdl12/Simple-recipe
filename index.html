@@ -6,7 +6,7 @@
         body{background-color: rgb(245, 200, 105);}
         /*페이지의 전체내용을 담고있는 요소의 마진을 위아래를 0, 좌우를 auto로 설정하여 위치를 고정시킨다.*/
         /*내용의 배경색을 따로 설정하고, 최대크기를 고정시키고, 배경색이 적용될 범위를 세로의 크기를 설정하여 정한다.*/
-        div#body{margin: 0px auto; background-color:rgb(241, 181, 50);max-width:600px;height:1730px;}
+        div#body{margin: 0px auto; background-color:rgb(241, 181, 50);max-width:600px;height:1780px;}
         /*음식에 대한 정보가 나타날 요소의 가로크기와 세로크기를 설정하고, 배경색을 흰색으로 설정한다.*/
         iframe{ width:100%; height:1100px;
          background-color: rgb(252, 246, 246);
@@ -27,6 +27,8 @@
         #rice1{color:rgba(26, 199, 113, 0.733);}
         #rice2{color:rgba(16, 188, 211, 0.733);}
         #rice3{color:rgba(192, 145, 75, 0.733);}    
+        #rice4{color:rgba(245, 72, 49, 0.733);}  
+        #soup1{color:rgba(3, 141, 49, 0.733);}
         #snack1{color:rgba(91, 75, 238, 0.733);}
         #snack2{color:rgba(174, 177, 29, 0.733);}
         #snack3{color: rgba(241, 89, 229, 0.733);}
@@ -37,7 +39,7 @@
             /*모니터 역할을 하는 iframe의 가로크기를 설정하고, 다음요소가 옆에 붙을 수 있게 left로 설정한다.*/
             iframe{width: 600px; float: left;}
             /*전체 문단의 크기를 가로는 늘어났을경우 최대 1180px까지로 제한하고, 세로는 1300px로 설정하여 배경색의 범위를 줄인다.*/
-            div#body{max-width: 1180px; height:1300px;}
+            div#body{max-width: 1180px; height:1350px;}
             /*음식과 간식을 나타내는 내용을 전부 iframe옆에 붙을수있게 right설정한다.*/
             .head , .link{float: right;}
             /*이메일에 대한 멘트도 남은 옆공간에 붙이고, 앞 요소와 700px만큼 떨어져서 위치시킨다.*/
@@ -68,10 +70,13 @@
     <!--식사류의 음식이 나와있음을 알리는 소제목이다.-->
     <h3 class="head">한끼 음식</h3>
     <!--여러 음식들이 링크로 나타나있고, section으로 묶어서 크기와 위치를 조정한다.-->
-    <section class="link">  
+    <section class="link">
+    <!--각 링크에 음식에 대한 레시피의 정보를 담고, 해당 링크를 iframe에 연결한다.-->  
         <a href="간장계란밥.html" target="monitor" id="rice1">간장계란밥</a>
         <a href="만두볶음밥.html" target="monitor" id="rice2">만두볶음밥</a>
         <a href="참치볶음밥.html" target="monitor" id="rice3">참치볶음밥</a>
+        <a href="김치볶음밥.html" target="monitor" id="rice4">김치볶음밥</a>
+        <a href="계란국.html" target="monitor" id="soup1">계란국</a>
     </section>
    <!--간식이 나와있음을 알리는 소제목이다. 추가적으로 앞의 음식류와 거리를 벌려서 위치시키기위해 윗마진을 설정하였다.-->
     <h3 class="head" style="margin-top: 100px;" >간식</h3>
